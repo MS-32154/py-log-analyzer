@@ -1,5 +1,17 @@
 #!/usr/bin/env python3
 
+"""
+tui.py
+
+Entry point for the Log Explorer TUI.
+
+Author: MS-32154
+email: msttoffg@gmail.com
+Version: 0.1.0
+License: MIT
+Date: 2025-07-28
+"""
+
 import curses
 import sys
 from pathlib import Path

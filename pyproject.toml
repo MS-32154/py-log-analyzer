@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-log-analyzer"
+version = "0.1.0"
+description = "Analyze, visualize, and explore log files"
+authors = [
+    { name="MS-32154", email="msttoffg@gmail.com" }
+]
+dependencies = [
+    "windows-curses; sys_platform == 'win32'"
+]
+requires-python = ">=3.7"
+readme = "README.md"
+license = "MIT"
+
+[project.scripts]
+log_explorer = "log_explorer.tui:main"
