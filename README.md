@@ -1,7 +1,7 @@
 # Log Explorer TUI
 
 **Log Explorer** is a terminal-based log analysis tool designed for clarity, flexibility, and modular extensibility.  
-It supports a variety of log formats (structured and unstructured), search functionality, statistics, and visualizations — all through a powerful TUI (Text User Interface).
+It supports a variety of log formats (structured and unstructured), search functionality, statistics, and visualizations — all through a powerful TUI (Text User Interface). It also handles .gz, .bz2, .xz, and .lzma files automatically — no manual decompression needed.
 
 ---
 
