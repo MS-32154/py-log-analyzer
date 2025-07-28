@@ -32,73 +32,44 @@ log_explorer
 
 ---
 
-## Workflow Overview
+## Preview
 
-1. **FILES TAB** – Navigate and select a log file
-2. **Process (`p`)** – Analyze the log structure with the inference engine
-3. **SEARCH TAB** – Filter log entries based on structured and raw fields
-4. **STATS TAB** – Review aggregated metrics and field distributions
-5. **PLOTS TAB** – Visual visualizations like time histograms and frequency charts
+![interactive-mode](screenshots.gif)
 
 ---
 
-## Global Controls
+## App Overview & Help
 
-| Key            | Action             |
-| -------------- | ------------------ |
-| `Tab`          | Switch to next tab |
-| `q`            | Quit application   |
-| `Page Up/Down` | Scroll tab content |
-
----
-
-## Files Tab
-
-| Key       | Action                                 |
-| --------- | -------------------------------------- |
-| `Up/Down` | Navigate files and directories         |
-| `Enter`   | Enter a directory / Load selected file |
-| `c`       | Change directory (input mode)          |
-| `r`       | Refresh file list                      |
-| `p`       | Process and analyze selected log file  |
-
----
-
-## Search Tab
-
-### Navigation Mode
-
-| Key            | Action                           |
-| -------------- | -------------------------------- |
-| `Shift+Tab`    | Move between form fields         |
-| `Up/Down`      | Navigate between fields          |
-| `Enter`/`Type` | Edit a field                     |
-| `Space`        | Toggle operator or boolean value |
-| `Backspace`    | Clear field                      |
-| `Enter`        | Execute search                   |
-
-### Input Mode
-
-| Key      | Action                   |
-| -------- | ------------------------ |
-| `Type`   | Edit input field         |
-| `Enter`  | Save and exit input mode |
-| `Esc`    | Cancel and exit input    |
-| `Ctrl+U` | Clear current input line |
-
-### Search Results
-
-| Key            | Action                        |
-| -------------- | ----------------------------- |
-| `v`            | Toggle raw log lines          |
-| `Page Up/Down` | Scroll through search results |
-| `F/B`          | Scroll field value table      |
-
-### Time Format
-
-Use the standard for search filters:
-
-`YYYY-MM-DD HH:MM:SS`
+| **Context**       | **Key/Step**   | **Action / Description**                                                       |
+| ----------------- | -------------- | ------------------------------------------------------------------------------ |
+| **Workflow**      | 1              | FILES TAB: Navigate and load a log file                                        |
+|                   | 2              | `p`: Process and analyze file                                                  |
+|                   | 3              | SEARCH TAB: Query and filter logs                                              |
+|                   | 4              | STATS TAB: View analysis metrics                                               |
+|                   | 5              | PLOTS TAB: Visualize data                                                      |
+| **Global**        | `Tab`          | Switch to next tab                                                             |
+|                   | `q`            | Quit application                                                               |
+|                   | `Page Up/Down` | Scroll content                                                                 |
+| **Files Tab**     | `Up/Down`      | Navigate directory                                                             |
+|                   | `Enter`        | Enter directory / Load file                                                    |
+|                   | `c`            | Change directory (input mode)                                                  |
+|                   | `r`            | Refresh directory listing                                                      |
+|                   | `p`            | Process current file (full analysis)                                           |
+| **Search Tab**    | `Shift+Tab`    | Move between form fields (Nav Mode)                                            |
+| (Navigation)      | `Up/Down`      | Move between form fields                                                       |
+|                   | `Enter/Type`   | Edit text fields                                                               |
+|                   | `Space`        | Toggle boolean / cycle operator                                                |
+|                   | `Backspace`    | Clear current field                                                            |
+|                   | `Enter`        | Execute search (if not editing a field; **Highlight Operator/Case Sensitive**) |
+| **Search Tab**    | Type           | Edit text (Input Mode)                                                         |
+| (Input Mode)      | `Enter`        | Save and exit input mode                                                       |
+|                   | `Esc`          | Cancel and exit input mode                                                     |
+|                   | `Ctrl+U`       | Clear current line                                                             |
+| **Search Result** | `v`            | Toggle raw lines view                                                          |
+|                   | `Page Up/Down` | Scroll search results                                                          |
+|                   | `F/B`          | Scroll field values table                                                      |
+| **Time Format**   | Format         | `YYYY-MM-DD HH:MM:SS` (e.g., `2024-01-15 14:30:00`)                            |
+| **Supported**     | Formats        | JSON, CSV, LTSV, Key-Value, Apache/Nginx logs, Syslog, Systemd Journal         |
 
 ---
 
@@ -107,6 +78,8 @@ Use the standard for search filters:
 - Smarter detection engine — machine learning models for log inference
 
 - Multi-file mode in TUI — backend support exists; UI coming soon
+
+- Export search results — backend support exists; UI coming soon
 
 - Library interface — allow the engines to be used as an importable Python library
 
