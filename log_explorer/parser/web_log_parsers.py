@@ -1,8 +1,8 @@
 from datetime import datetime
 
 from .base_parser import PatternBasedParser
-from inference.log_core import LogFormat
-from inference.line_patterns import patterns
+from log_explorer.inference.log_core import LogFormat
+from log_explorer.inference.line_patterns import patterns
 
 
 class WebLogParser(PatternBasedParser):

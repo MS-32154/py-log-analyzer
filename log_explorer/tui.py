@@ -17,15 +17,15 @@ import sys
 from pathlib import Path
 from datetime import datetime
 
-from inference.inference_engine import LogSchemaInferenceEngine
-from parser.parsing_engine import LogParsingEngine
-from search.search_engine import (
+from .inference.inference_engine import LogSchemaInferenceEngine
+from .parser.parsing_engine import LogParsingEngine
+from .search.search_engine import (
     LogSearchEngine,
     SearchQuery,
     SearchFilter,
     TimeFilter,
 )
-from stats.analyzer import LogStatsAnalyzer
+from .stats.analyzer import LogStatsAnalyzer
 
 
 class BaseUI:

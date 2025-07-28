@@ -10,9 +10,9 @@ from .syslog_parsers import (
     ParsedLogEntry,
 )
 from .base_parser import PatternBasedParser, ParseResult
-from inference.log_core import LogFormat
-from inference.line_patterns import patterns
-from inference.utils import CompressionHandler
+from log_explorer.inference.log_core import LogFormat
+from log_explorer.inference.line_patterns import patterns
+from log_explorer.inference.utils import CompressionHandler
 
 logger = logging.getLogger(__name__)
 

@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from datetime import datetime
 
-from inference.timestamp_detector import TimestampDetector
+from log_explorer.inference.timestamp_detector import TimestampDetector
 
 
 @dataclass

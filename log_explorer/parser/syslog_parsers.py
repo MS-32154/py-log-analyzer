@@ -2,7 +2,7 @@ import re
 from datetime import datetime
 
 from .base_parser import BaseParser, ParsedLogEntry, PatternBasedParser, ParseResult
-from inference.line_patterns import patterns
+from log_explorer.inference.line_patterns import patterns
 
 
 class SyslogParser(PatternBasedParser):

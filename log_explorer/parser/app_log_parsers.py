@@ -1,8 +1,8 @@
 import re
 
 from .base_parser import BaseParser, ParsedLogEntry
-from inference.line_patterns import patterns
-from inference.timestamp_detector import TimestampDetector
+from log_explorer.inference.line_patterns import patterns
+from log_explorer.inference.timestamp_detector import TimestampDetector
 
 
 class BaseLogParserMixin:

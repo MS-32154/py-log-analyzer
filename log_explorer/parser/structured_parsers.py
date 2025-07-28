@@ -4,8 +4,8 @@ import re
 from io import StringIO
 
 from .base_parser import BaseParser, ParsedLogEntry
-from inference.line_patterns import patterns
-from inference.log_core import LogFormat
+from log_explorer.inference.line_patterns import patterns
+from log_explorer.inference.log_core import LogFormat
 
 
 class JSONParser(BaseParser):
